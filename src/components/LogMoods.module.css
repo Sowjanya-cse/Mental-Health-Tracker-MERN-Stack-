@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+}
+
+.mainContent {
+    flex: 1; /* Allow main content to fill available space */
+    margin-left: 150px; /* Space for the sidebar */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for main content */
+    border-left: 1px solid #e0e0e0; /* Optional left border for separation */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Stylish font */
+    font-size: 1.5rem; /* Larger font size */
+    color: #333; /* Dark text color */
+}
+
+.navButton {
+    margin: 0 10px;
+    padding: 8px 12px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.navButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.trackingPanel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; /* Space between mood boxes */
+}
+
+.moodBox {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.moodBox:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.slider {
+    width: 100%; /* Ensure slider fills the box */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.menstruationSection {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef; /* Light background for emphasis */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.noteSection {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #eef; /* Light background for emphasis */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.saveButton,
+.submitButton {
+    margin-top: 10px;
+    padding: 12px 18px;
+    background-color: #4c94d7; /* Bootstrap success color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* Slightly larger text */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.saveButton:hover {
+    background-color: #0b7171;
+}
+.submitButton:hover {
+    background-color: #074952; /* Darker green on hover */
+}

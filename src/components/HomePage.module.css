@@ -1,0 +1,93 @@
+.homepageContainer {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Soft background color */
+    padding: 20px;
+}
+
+.homepageNavbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #007bff; /* Primary color for the navbar */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.homepageNavLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.homepageNavLinks button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.homepageNavLinks button:hover {
+    color: #ffdd57; /* Hover effect */
+}
+
+.homepageStartTrackingBtn {
+    background-color: #ffdd57; /* Button color */
+    border: none;
+    padding: 10px 20px;
+    color: #007bff; /* Text color */
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.homepageStartTrackingBtn:hover {
+    background-color: #ffe66d; /* Hover effect for button */
+}
+
+.homepageLogo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.homepageMainContent {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.homepageMainHeading {
+    font-size: 28px;
+    color: #333; /* Darker text color */
+}
+
+.homepageDescription {
+    font-size: 18px;
+    color: #666; /* Lighter text color */
+    margin: 10px 0;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff; /* Heading color */
+    border-bottom: 2px solid #ffdd57; /* Underline for headings */
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #444; /* Text color for paragraphs */
+}

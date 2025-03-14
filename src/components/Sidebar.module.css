@@ -1,0 +1,116 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full viewport height */
+    width: 150px; /* Reduced width for a more medium size */
+    background-color: #0c413a; /* Sidebar background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the sidebar stays on top */
+}
+
+/* Sidebar title */
+.sidebarTitle {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    padding: 10px; /* Added padding for better spacing */
+    text-align: center; /* Centered title */
+}
+
+/* Navigation menu styles */
+.sidebarNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure buttons fill the width */
+}
+
+.sidebarNav li {
+    width: 100%; /* Ensure buttons fill the width */
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center; /* Center buttons within the sidebar */
+}
+
+/* Enhanced button styling */
+.sidebarNav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    padding: 15px;
+    border-radius: 25px; /* Rounded corners */
+    background-color: #026252; /* Background color for buttons */
+    width: 80%; /* Width of the buttons */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    display: block;
+}
+
+/* Hover and active states for the buttons */
+.sidebarNav a:hover {
+    background-color: #3acebd; /* Lighter shade on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.sidebarNav a:active {
+    background-color: #00332b; /* Darker shade when pressed */
+    transform: translateY(0); /* Reset the lift when pressed */
+}
+
+/* Active button styling */
+.sidebarNav a.active {
+    background-color: #00897b; /* Different color to indicate active page */
+}
+
+/* Logout button styling */
+.logoutButton {
+    background-color: #026252;
+    color: #fff;
+    font-size: 19px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    width: 80%; /* Width of the button */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.logoutButton:hover {
+    background-color: #3acebd; /* Lighter shade on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logoutButton:active {
+    background-color: #00332b; /* Darker shade when pressed */
+    transform: translateY(0); /* Reset lift on press */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 120px; /* Adjust width for smaller screens */
+        padding: 10px 0; /* Reduce padding for smaller screens */
+    }
+
+    .sidebarTitle {
+        font-size: 22px; /* Smaller title for smaller screens */
+    }
+
+    .sidebarNav a, .logoutButton {
+        font-size: 16px; /* Smaller font size */
+        padding: 10px; /* Reduce padding for smaller buttons */
+    }
+}

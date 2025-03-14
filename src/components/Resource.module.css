@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 150px; /* Space for sidebar */
+    background-color: #ffffff; /* White background for main content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header {
+    text-align: center;
+    font-size: 2.5rem; /* Large font size for the header */
+    color: #007bff; /* Blue color */
+    margin-bottom: 10px; /* Space below header */
+}
+
+.subHeader {
+    text-align: center;
+    font-size: 1.2rem; /* Smaller font for subheader */
+    color: #555; /* Dark gray for readability */
+    margin-bottom: 30px; /* Space below subheader */
+}
+
+.section {
+    margin-bottom: 30px; /* Space between sections */
+}
+
+.sectionTitle {
+    font-size: 1.8rem; /* Subheading size */
+    color: #007bff; /* Blue color for subheading */
+    margin-bottom: 10px; /* Space below section title */
+    display: flex;
+    align-items: center; /* Center align icon and text */
+}
+
+.sectionTitle svg {
+    margin-right: 8px; /* Space between icon and text */
+    color: #007bff; /* Icon color */
+}
+
+.articleList, .videoList, .supportList, .contactList {
+    padding: 0; /* Remove padding for lists */
+    list-style: none; /* Remove bullet points */
+}
+
+.articleItem, .videoItem, .supportItem, .contactItem {
+    background-color: #e9ecef; /* Light gray background for items */
+    margin: 5px 0; /* Space between items */
+    padding: 10px; /* Padding for items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.articleItem:hover, .videoItem:hover, .supportItem:hover, .contactItem:hover {
+    background-color: #ced4da; /* Darker gray on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+strong {
+    font-weight: bold; /* Bold text for titles */
+    color: #333; /* Dark text color */
+}

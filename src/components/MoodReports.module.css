@@ -1,0 +1,72 @@
+/* Container for the whole mood reports section */
+.reportsContainer {
+    display: flex;
+    height: 100vh;
+}
+
+/* Content area where all the reports will appear */
+.reportsContent {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    margin-left: 150px; /* Ensure content doesn't overlap with sidebar */
+}
+
+/* Navigation bar containing the month-year display and buttons */
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.navigationBar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigationBar button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.navigationBar button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Grid layout for the histogram boxes */
+.histogramGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for two rows */
+    gap: 20px; /* Spacing between the boxes */
+}
+
+/* Individual box for each histogram graph */
+.histogramItem {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 300px; /* Fixed height for consistent vertical size */
+}
+
+/* Styling for the header inside each histogram box */
+.histogramItem h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Make sure the canvas for the charts fits the container */
+.histogramItem canvas {
+    width: 100% !important;
+    height: 200px !important; /* Ensure the bar graph is visible and appropriately sized */
+    margin-top: 10px; /* Space above the chart */
+}

@@ -1,0 +1,76 @@
+.loginRegisterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f4f8 30%, #cfd9df 100%); /* Gradient background */
+    
+}
+
+.formContainer {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Increased width */
+}
+
+h2 {
+    text-align: center;
+    color: #007bff; /* Heading color */
+    margin-bottom: 20px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid #007bff; /* Focus effect */
+    outline: none; /* Remove default outline */
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.toggleFormLink {
+    color: #007bff;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.toggleFormLink:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.errorMessage {
+    color: red;
+    margin-top: 10px;
+}

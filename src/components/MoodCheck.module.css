@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 150px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.moodSection {
+    margin-bottom: 30px;
+}
+
+.moodSection label {
+    font-size: 1.5rem;
+    color: #333;
+    margin-right: 10px;
+}
+
+.slider {
+    width: 99%;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.selectionSection {
+    margin-bottom: 30px;
+}
+
+.selectionSection h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.areaButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.areaButton:hover {
+    background-color: #17e19b;
+}
+
+.areaButton.selected {
+    background-color: #e6bb45;
+}
+
+.submitButton {
+    background-color: #057032;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #054f55;
+}
+
+.solutionsSection {
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 2px solid #007bff;
+}
+
+.solutionsSection h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.solutionsSection ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.solutionsSection li {
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Alert Popup Styles */
+.alertPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alertContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.alertContent h2 {
+    color: #ff4d4d;
+}
+
+.alertContent p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.closeAlertButton {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.closeAlertButton:hover {
+    background-color: #0056b3;
+}
